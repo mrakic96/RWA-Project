@@ -45,7 +45,7 @@
 
                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <!-- Dashboard Link for admins and moderators -->
-                                @is(['admin', 'moderator'])
+                                @is('admin')
 
                                   <a class="dropdown-item" href="/dashboard">
                                       {{ __('Dashboard') }}
