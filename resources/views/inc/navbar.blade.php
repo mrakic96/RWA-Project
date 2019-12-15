@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
           <div class="container">
               <a class="navbar-brand" href="{{ url('/') }}">
-                  <img src="{{ asset('images/logo.png') }}" width="235px" height="44px" alt="">
+                  <img src="{{ asset('images/logo.png') }}" width="180px" height="36px" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                   <span class="navbar-toggler-icon"></span>
@@ -39,6 +39,7 @@
                               </a>
 
                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <h6 class="dropdown-header">Opcije</h6>
                                 <!-- Dashboard Link for admins and moderators -->
                                 @is('admin')
 
@@ -50,7 +51,7 @@
                                   <a class="dropdown-item" href="{{ route('logout') }}"
                                      onclick="event.preventDefault();
                                                    document.getElementById('logout-form').submit();">
-                                      {{ __('Logout') }}
+                                      {{ __('Odjava') }}
                                   </a>
 
                                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
