@@ -26,10 +26,10 @@
                   <ul class="navbar-nav ml-auto">
                       <!-- Authentication Links -->
                       @guest
-                      <a href="{{ route('login') }}"><button type="button" class="btn btn-outline-secondary">{{ __('Prijava') }}</button></a>
+                      <a href="{{ route('login') }}"><button type="button" class="btn btn-outline-secondary" style="border-color: #3490dc; color: #3490dc;">{{ __('Prijava') }}</button></a>
 
                           @if (Route::has('register'))
-                          <a href="{{ route('register') }}"><button type="button" class="btn btn-secondary">{{ __('Registracija') }}</button></a>
+                          <a href="{{ route('register') }}"><button type="button" class="btn btn-secondary" style="color: #38c172;">{{ __('Registracija') }}</button></a>
 
                           @endif
                       @else
