@@ -45,6 +45,13 @@
   box-sizing: border-box;
 }
 
+.cta{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -2723,7 +2730,7 @@ textarea.form-control.is-invalid {
 .btn:focus,
 .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  /*box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);*/
 }
 
 .btn.disabled,
@@ -2775,20 +2782,20 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  color: #9A9DA0;
+  background-color: #343A40;
+  border-color: #343A40;
 }
 
 .btn-secondary:hover {
-  color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  color: #9A9DA0;
+  background-color: #343A40;
+  border-color: #343A40;
 }
 
 .btn-secondary:focus,
 .btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+  /* box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); */
 }
 
 .btn-secondary.disabled,
@@ -3077,8 +3084,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d;
+  color: #9A9DA0;
+  border-color: #9A9DA0;
 }
 
 .btn-outline-secondary:hover {
@@ -3089,7 +3096,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-secondary:focus,
 .btn-outline-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  /*box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);*/
 }
 
 .btn-outline-secondary.disabled,
@@ -4475,6 +4482,7 @@ input[type=button].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  font-size:14.4px;
 }
 
 .nav-link:hover,
@@ -4585,9 +4593,10 @@ input[type=button].btn-block {
   padding-top: 0.32rem;
   padding-bottom: 0.32rem;
   margin-right: 1rem;
-  font-size: 1.125rem;
+  font-size: 1.250rem;
   line-height: inherit;
   white-space: nowrap;
+  color: #edf0f1;
 }
 
 .navbar-brand:hover,
@@ -5052,7 +5061,7 @@ input[type=button].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 

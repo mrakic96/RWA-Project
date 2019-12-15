@@ -19,9 +19,9 @@
     <div id="app">
         
         @include('inc.navbar')
-        <div class="container" id="container01">
-        @yield('content')
-        </div>
+            <div class="container" id="container01">
+                @yield('content')
+            </div>
     </div>
 </body>
 </html>

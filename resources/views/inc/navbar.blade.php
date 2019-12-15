@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
           <div class="container">
               <a class="navbar-brand" href="{{ url('/') }}">
-                  {{ config('app.name', 'HobbyShop') }}
+                  <img src="{{ asset('images/logo.png') }}" width="235px" height="44px" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                   <span class="navbar-toggler-icon"></span>
@@ -14,28 +14,23 @@
                   </ul>
 
                   <ul class="navbar-nav mr-auto">
-                      <li class="nav-item" >
-                        <a class="nav-link" href="/">Početna <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/about">O nama</a>
-                      </li>
                       <li class="nav-item">
                         <a class="nav-link" href="/services">Usluge</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/about">O nama</a>
+                      </li>           
                     </ul>
 
                   <!-- Right Side Of Navbar -->
                   <ul class="navbar-nav ml-auto">
                       <!-- Authentication Links -->
                       @guest
-                          <li class="nav-item">
-                              <a class="nav-link" href="{{ route('login') }}">{{ __('Prijavi se') }}</a>
-                          </li>
+                      <a href="{{ route('login') }}"><button type="button" class="btn btn-outline-secondary">{{ __('Prijavi se') }}</button></a>
+
                           @if (Route::has('register'))
-                              <li class="nav-item">
-                                  <a class="nav-link" href="{{ route('register') }}">{{ __('Registriraj se') }}</a>
-                              </li>
+                          <a href="{{ route('register') }}"><button type="button" class="btn btn-secondary">{{ __('Registriraj se') }}</button></a>
+
                           @endif
                       @else
                           <li class="nav-item dropdown">
